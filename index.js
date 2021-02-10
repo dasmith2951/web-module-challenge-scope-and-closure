@@ -66,9 +66,13 @@ Use the inning function below to do the following:
 NOTE: This will be a callback function for the tasks below
 */
 
-function inning(/*Code Here*/){
-    /*Code Here*/
+function inning(max) {
+
+  return Math.floor(Math.random() * Math.floor(max));
+  
 }
+
+console.log(inning(3));
 
 
 /* ⚾️⚾️⚾️ Task 3: finalScore() ⚾️⚾️⚾️
