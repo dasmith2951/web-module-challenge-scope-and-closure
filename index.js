@@ -35,22 +35,26 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
      counter2 be better?  
 */
 
+// 3a.) Power-switch (exit program) counter2 would be preferred. 
+//      If you wanted to follow the traffic, monitor peek hours, store data on a video game, etc.
+//      on a website though you would want counter1.
+
 // counter1 code
 function counterMaker() {
-  let count = 0;
+  let count = 0; //variable created inside of counterMaker fn (a closure).
   return function counter() {
    return count++;
   }
 }
 
-const counter1 = counterMaker();
+const counter1 = counterMaker(); //re-cursive code, recursive keeps your code DRY.
 
 // counter2 code
-let count = 0;
+let count = 0; //global variable, no closure.
 
 function counter2() {
   return count++;
-}
+} //one-off counter
 
 
 /* ⚾️⚾️⚾️ Task 2: inning() ⚾️⚾️⚾️
@@ -101,7 +105,7 @@ Use the scoreboard function below to do the following:
   2. Receive the callback function `inning` from Task 2
   3. Receive a number of innings to be played
   4. Return an array where each of it's index values equals a string stating the
-  Home and Away team's scores for each inning.  Not the cummulative score.
+  Home and Away team's scores for each inning. Not the cumulative score.
   5. If there's a tie at the end of the innings, add this message containing the score to the end of the array:  "This game will require extra innings: Away 12 - Home 12"  (see tie example below)
      If there isn't a tie, add this message to the end of the array: "Final Score: Away 13 - Home 11"  (see no tie example below)
   
