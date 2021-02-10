@@ -99,6 +99,8 @@ function getInningScore(/*Your Code Here */) {
 }
 
 
+//look @ array.map() for task 5 as a possibility.
+
 /* ⚾️⚾️⚾️ Task 5: scoreboard() ⚾️⚾️⚾️
 Use the scoreboard function below to do the following:
   1. Receive the callback function `getInningScore` from Task 4
