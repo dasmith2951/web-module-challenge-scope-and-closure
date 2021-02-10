@@ -47,7 +47,7 @@ function counterMaker() {
   }
 }
 
-const counter1 = counterMaker(); //re-cursive code, recursive keeps your code DRY.
+const counter1 = counterMaker(); //re-cursive code, recursive keeps your code DRY, better for The Big-O.
 
 // counter2 code
 let count = 0; //global variable, no closure.
