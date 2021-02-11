@@ -28,8 +28,10 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
-  
+  1a.) counter 1 is recursive code and will store the data, counter two is a "one-off" counter.
+
   2. Which of the two uses a closure? How can you tell?
+  2a.)counter one, the var isn't global; just within the scope.
   
   3. In what scenario would the counter1 code be preferable? In what scenario would 
      counter2 be better?  
@@ -66,13 +68,13 @@ Use the inning function below to do the following:
 NOTE: This will be a callback function for the tasks below
 */
 
-function inning(max) {
+function inning() {
 
-  return Math.floor(Math.random() * Math.floor(max));
+  return Math.floor(Math.random() * 3);
 
 }
 
-console.log(inning(3));
+console.log(inning());
 
 
 /* ⚾️⚾️⚾️ Task 3: finalScore() ⚾️⚾️⚾️
@@ -173,9 +175,40 @@ Use the scoreboard function below to do the following:
 ]  
   */
 
-function scoreboard(/* CODE HERE */) {
-  /* CODE HERE */
+ function scoreboard(getInningScore,inning,numberOfInnings) {
+
+  let scoreboard = [];
+  let awayTotal = 0;
+  let homeTotal = 0;
+
+  for (let i = 0; i < numberOfInnings; i++) {
+
+    let currentScore = getInningScore(inning);
+
+    awayTotal = awayTotal + currentScore.Away;
+    homeTotal = homeTotal + currentScore.Home;
+
+    let score = `Inning ${i + 1}: Away: ${currentScore.Away} || Home: ${currentScore.Home}`;
+
+    scoreboard.push(score);
+
+  }
+
+  let finalScore = `Final Score: Away ${awayTotal} - Home ${homeTotal} `;
+
+  if (awayTotal == homeTotal) {
+
+    finalScore = `This game will require extra innings: Away ${awayTotal} - Home ${homeTotal}`;
+
+  }
+
+  scoreboard.push(finalScore);
+
+  return scoreboard;
+
 }
+
+console.log(scoreboard(getInningScore, inning, 9));
 
 
 

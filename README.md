@@ -43,6 +43,7 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+1a.) Closure is a function that accesses its lexical scope even executed outside of its lexical scope. (called a lexical environment)
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -64,9 +65,13 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
-b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
-c. What is the lexical scope of `newRoll`? 
+~ personalDice fn, the var created inside the scope {}.
 
+b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+~ console print will always show "Dan rolled a" and the integer changes based on the Math.random generator.
+
+c. What is the lexical scope of `newRoll`? 
+~ "function()" aka an anonymous function.
 
 ### Task 3 - Stretch Goals
 
