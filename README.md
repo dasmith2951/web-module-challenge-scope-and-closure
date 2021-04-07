@@ -43,6 +43,7 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+
 1a.) Closure is a function that accesses its lexical scope even executed outside of its lexical scope. (called a lexical environment)
 
 2. Study the following code, then answer the questions below.
@@ -95,6 +96,31 @@ addSix(21); // returns 27
 ```
 
 2. Research the differences between functional programming and object oriented programming. Then, describe the pros and cons of functional programming vs object-oriented programming. This is a common interview question and great practice!
+
+~ Both Functional programming and object-oriented programming uses a different method for storing and manipulating the data. In functional programming, data cannot be stored in objects and it can only be transformed by creating functions. In object-oriented programming, data is stored in objects.
+
+Pros to Functional Programming: 
+
+~ Supports the programming languages like Lisp, Clojure, Wolfram, Erlang, Haskell, F#, R, and other prominent and domain-specific languages. 
+
+~ A great fit for data science work, and R is the popular language among data scientists.
+
+~ FP languages can be translated well into an interactive environment, which makes the understanding of code easier.
+
+~ Provides advantages like efficiency, lazy evaluation, nested functions, bug-free code, parallel programming. 
+
+~ In simple language, functional programming is to write the function having statements to execute a particular task for the application.
+
+~ The function can be easily invoked and reused at any point.  It also helps the code to be managed, and the same thing or statements does not need to write again and again.
+Functional Programming based on different concepts is 1. High Order Functions (HOF). 2. Pure functions. 3. Recursion. 4. Strict and Non-strict Evaluation. 5. Type systems. 6. Referential Transparency. In functional programming, functions are referred to as first-class citizens.
+
+Pro to OOP (Object-Oriented Programming):
+
+~ Object-oriented programming based on the main features that are: 1. Abstraction: It helps in letting the useful information or relevant data to a user, increasing the program’s efficiency and making things simple. 2. Inheritance: It helps in inheriting the methods, functions, properties, and fields of a base class in the derived class. 3. Polymorphism: It helps in doing one task in many ways with the help of overloading and overriding, which is also known as compile-time and run-time polymorphism, respectively. 4. Encapsulation: It helps in hiding irrelevant data from a user and prevents the user from unauthorized access.
+
+~ Object-oriented programming languages are C++, C#, Java, Python, Ruby, PHP, Perl, Objective-C, Swift, Dart, Lisp, etc. In an object-oriented application, objects can be easily reused in another application. New objects can be easily created for the same class, and code can be easily maintained and altered.
+
+~ It also has the feature of memory management. It provides a great benefit in designing large programs, which can be easily divided into smaller parts and helps in distinguishing the components or phases that need to be executed or planned in a certain way.
 
 ## Resources
 
