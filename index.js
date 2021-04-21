@@ -116,8 +116,8 @@ console.log(finalScore(inning, 9));
 
 /* ⚾️⚾️⚾️ Task 4: getInningScore() ⚾️⚾️⚾️
 Use the getInningScore() function below to do the following:
-  1. Receive a callback function - you will pass in the inning function from task 2 as your argument 
-  2. Return an object with a score for home and a score for away that populates from invoking the inning callback function */
+1. Receive a callback function - you will pass in the inning function from task 2 as your argument 
+2. Return an object with a score for home and a score for away that populates from invoking the inning callback function */
 
 function getInningScore(inningScore) {
   
@@ -173,9 +173,9 @@ Use the scoreboard function below to do the following:
   "Inning 9: Away 1 - Home 1", 
   "This game will require extra innings: Away 10 - Home 10"
 ]  
-  */
+*/
 
- function scoreboard(getInningScore,inning,numberOfInnings) {
+function scoreboard(getInningScore,inning,numberOfInnings) {
 
   let scoreboard = [];
   let awayTotal = 0;
